@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-example23-production</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
+  <script src="directives/collapse/collapse.js"></script>
+  <script src="directives/accordion/accordion.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body ng-app="angularUI">  
+  <uib-accordion>
+    <uib-accordion-group is-open="status.open">
+      <uib-accordion-heading>
+        I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+      </uib-accordion-heading>
+      This is just some content to illustrate fancy headings.
+    </uib-accordion-group>
+  </uib-accordion>
+</body>
+
+</html>
